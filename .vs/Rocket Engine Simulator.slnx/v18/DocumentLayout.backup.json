@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Code\\rocket-engine-simulator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6EEEFC3B-2990-0C82-88B4-A0E6C3E5701B}|Rocket Engine Simulator.csproj|d:\\code\\rocket-engine-simulator\\src\\rocketenginesimulator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EEEFC3B-2990-0C82-88B4-A0E6C3E5701B}|Rocket Engine Simulator.csproj|solutionrelative:src\\rocketenginesimulator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EEEFC3B-2990-0C82-88B4-A0E6C3E5701B}|Rocket Engine Simulator.csproj|d:\\code\\rocket-engine-simulator\\src\\rocketenginesimulator\\rocketenginesimulator.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6EEEFC3B-2990-0C82-88B4-A0E6C3E5701B}|Rocket Engine Simulator.csproj|solutionrelative:src\\rocketenginesimulator\\rocketenginesimulator.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\rocket-engine-simulator\\src\\RocketEngineSimulator\\Program.cs",
+              "RelativeDocumentMoniker": "src\\RocketEngineSimulator\\Program.cs",
+              "ToolTip": "D:\\Code\\rocket-engine-simulator\\src\\RocketEngineSimulator\\Program.cs",
+              "RelativeToolTip": "src\\RocketEngineSimulator\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T21:42:25.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RocketEngineSimulator.csproj",
+              "DocumentMoniker": "D:\\Code\\rocket-engine-simulator\\src\\RocketEngineSimulator\\RocketEngineSimulator.csproj",
+              "RelativeDocumentMoniker": "src\\RocketEngineSimulator\\RocketEngineSimulator.csproj",
+              "ToolTip": "D:\\Code\\rocket-engine-simulator\\src\\RocketEngineSimulator\\RocketEngineSimulator.csproj",
+              "RelativeToolTip": "src\\RocketEngineSimulator\\RocketEngineSimulator.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-14T21:42:22.37Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

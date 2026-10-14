@@ -8,6 +8,9 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="src/RocketEngineSimulator/Program.cs" />
+    <Compile Include="src\RocketEngineSimulator\Core.cs" />
+    <Compile Include="src\RocketEngineSimulator\Engine.cs" />
+    <Compile Include="src\RocketEngineSimulator\Physics.cs" />
+    <Compile Include="src\RocketEngineSimulator\Runner.cs" />
   </ItemGroup>
 </Project>

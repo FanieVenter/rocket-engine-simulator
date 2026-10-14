@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 
 namespace RocketEngineSimulator
 {
-    class Program
+    class Runner
     {
         static void Main(string[] args)
         {

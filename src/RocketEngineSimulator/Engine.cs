@@ -64,7 +64,7 @@ public class Engine
     public double Thrust_KN = 300;
     public double AtmosphericPressure_Kpa = 101.325;
     public double ExitPressure_Kpa = 0;            // 0 = match ambient
-    public double ChamberPressureBar = 2;
+    public double ChamberPressureBar = 200;
     public double MixtureRatio = 3.3;              // O/F
     public double ChamberTemperature = 3600;       // K, placeholder until checked against CEA
     public double PropellantGamma = 1.2;

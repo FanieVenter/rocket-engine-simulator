@@ -89,15 +89,6 @@ public class Engine
         FuelCalculations();
         GeometryCalculations();
         PerformanceCalculations();
-        Console.WriteLine($"Exhaust velocity: {ExhaustVelocity:F0} m/s");
-        Console.WriteLine($"Throat diameter:  {ThroatDiameter * 1000:F1} mm");
-        Console.WriteLine($"Nozzle diameter:    {ExitDiameter * 1000:F1} mm");
-        Console.WriteLine($"Exit Mach:        {ExitMach:F2}");
-        Console.WriteLine($"Chamber diameter: {ChamberDiameter * 1000:F1} mm");
-        Console.WriteLine($"Convergent length:{ConvergentLength * 1000:F1} mm");
-        Console.WriteLine($"Chamber length:   {ChamberLength * 1000:F1} mm");
-        
-        
     }
     
     public void InputCalculations()

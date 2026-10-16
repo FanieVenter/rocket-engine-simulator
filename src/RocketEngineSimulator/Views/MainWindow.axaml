@@ -1,0 +1,67 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RocketEngineSimulator.Views.MainWindow"
+        Title="Rocket Engine Simulator"
+        Width="1100" Height="800" MinWidth="650" MinHeight="450" Background="#FF2D2D30">
+    
+    <!-- 1. Added ColumnDefinitions="*,*" to separate left inputs from right outputs -->
+    <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="*,*" Margin="20" RowSpacing="16">
+        
+        <!-- Span the header title across both columns -->
+        <TextBlock Grid.ColumnSpan="2"
+                   Text="Rocket Engine Telemetry Data" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   FontSize="40"/>
+        
+        <!-- 2. Placed the Input ScrollViewer explicitly in Column 0 (Left Side) -->
+        <ScrollViewer Grid.Row="1" Grid.Column="0">
+            <StackPanel Name="Input" Spacing="8" HorizontalAlignment="Left" Margin="20,0,0,0" >
+                <TextBlock Text="Thrust (kN):" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
+                <TextBox Name="ThrustInput" TextChanged="ThrustInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
+                <TextBlock Text="Chamber Pressure (Bar):" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
+                <TextBox Name="ChamberPressureInput" TextChanged="ChamberPressureInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
+                <TextBlock Text="Mixture Ratio:" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
+                <TextBox Name="MixtureRatioInput" TextChanged="MixtureRatioInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
+                <TextBlock Text="Chamber Temperature (C):" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
+                <TextBox Name="ChamberTempInput" TextChanged="ChamberTempInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
+                <TextBlock Text="Convergent Angle (Degree's):" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
+                <TextBox Name="ConvergentAngleInput" TextChanged="ConvergentAngleInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
+                <TextBlock Text="LStar (M):" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
+                <TextBox Name="LStarInput" TextChanged="LStarInput_TextChanged" Width="150"  FontSize="26" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <!-- 3. Placed the Output ScrollViewer explicitly in Column 1 (Right Side) -->
+        <ScrollViewer Grid.Row="1" Grid.Column="1">
+            <!-- Swapped Margin right to Margin left/right cleanup so it fits gracefully -->
+            <StackPanel Name="Output" Spacing="8" HorizontalAlignment="Right" Margin="0,0,20,0">
+                <TextBlock Text="Performance" FontSize="26" FontWeight="Bold"/>
+                <TextBlock Name="Isp" Text="Isp: — s" FontSize="20"/>
+                <TextBlock Name="Thrust_kN" Text="Thrust: — kN" FontSize="20"/>
+                <TextBlock Name="ExhaustVelocity" Text="Exhaust velocity: — m/s" FontSize="20"/>
+                <TextBlock Name="ExitMach" Text="Exit Mach: —" FontSize="20"/>
+                <TextBlock Text="Propellant flow" FontSize="26" FontWeight="Bold" Margin="0,12,0,0"/>
+                <TextBlock Name="MassFlow" Text="Total mass flow: — kg/s" FontSize="20"/>
+                <TextBlock Name="FuelRate" Text="Fuel flow: — kg/s" FontSize="20"/>
+                <TextBlock Name="OxidizerRate" Text="Oxidizer flow: — kg/s" FontSize="20"/>
+                <TextBlock Text="Nozzle and chamber" FontSize="26" FontWeight="Bold" Margin="0,12,0,0"/>
+                <TextBlock Name="ThroatDiameter" Text="Throat diameter: — mm" FontSize="20"/>
+                <TextBlock Name="ExitDiameter" Text="Exit diameter: — mm" FontSize="20"/>
+                <TextBlock Name="ChamberDiameter" Text="Chamber diameter: — mm" FontSize="20"/>
+                <TextBlock Name="ConvergentLength" Text="Convergent length: — mm" FontSize="20"/>
+                <TextBlock Name="ChamberLength" Text="Chamber length: — mm" FontSize="20"/>
+                <TextBlock Name="ThroatArea" Text="Throat area: — m²" FontSize="20"/>
+                <TextBlock Name="ExitArea" Text="Exit area: — m²" FontSize="20"/>
+                <TextBlock Name="ChamberVolume" Text="Chamber volume: — L" FontSize="20"/>
+                <TextBlock Text="Gas conditions" FontSize="26" FontWeight="Bold" Margin="0,12,0,0"/>
+                <TextBlock Name="ThroatPressure" Text="Throat pressure: — bar" FontSize="20"/>
+                <TextBlock Name="ThroatTemperature" Text="Throat temperature: — K" FontSize="20"/>
+                <TextBlock Name="ExitTemperature" Text="Exit temperature: — K" FontSize="20"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <!-- Span the button across both columns at the bottom -->
+        <Button Click="Compile" Grid.Row="2" Grid.ColumnSpan="2" Content="Compile" MinHeight="75"  MinWidth="300" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" CornerRadius="15"/>
+    </Grid>
+</Window>

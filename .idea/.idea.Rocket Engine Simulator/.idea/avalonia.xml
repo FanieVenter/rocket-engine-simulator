@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="src/RocketEngineSimulator/App.axaml" value="Rocket Engine Simulator.csproj" />
+        <entry key="src/RocketEngineSimulator/Views/MainWindow.axaml" value="Rocket Engine Simulator.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

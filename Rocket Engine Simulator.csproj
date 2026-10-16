@@ -5,12 +5,15 @@
     <RootNamespace>RocketEngineSimulator</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
+
   <ItemGroup>
-    <Compile Include="src\RocketEngineSimulator\Core.cs" />
-    <Compile Include="src\RocketEngineSimulator\Engine.cs" />
-    <Compile Include="src\RocketEngineSimulator\Physics.cs" />
-    <Compile Include="src\RocketEngineSimulator\Runner.cs" />
+    <Compile Remove="src/**/obj/**/*.cs" />
+    <PackageReference Include="Avalonia" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="12.1.4" />
   </ItemGroup>
 </Project>

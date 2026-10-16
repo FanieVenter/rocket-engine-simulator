@@ -43,7 +43,7 @@ public partial class MainWindow : Window
     {
         if (TryReadInput(sender, out var value))
         {
-            _engine.ChamberTemperature = value;
+            _engine.ChamberTemperature = value + 273.15;
         }
     }
     private void ConvergentAngleInput_TextChanged(object? sender, TextChangedEventArgs e)

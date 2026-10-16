@@ -23,7 +23,7 @@
                 <TextBox Name="ChamberPressureInput" TextChanged="ChamberPressureInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
                 <TextBlock Text="Mixture Ratio:" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
                 <TextBox Name="MixtureRatioInput" TextChanged="MixtureRatioInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
-                <TextBlock Text="Chamber Temperature (C):" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
+                <TextBlock Text="Chamber Temperature (°C):" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
                 <TextBox Name="ChamberTempInput" TextChanged="ChamberTempInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
                 <TextBlock Text="Convergent Angle (Degree's):" VerticalAlignment="Center" FontSize="26" FontWeight="Bold" HorizontalAlignment="Left"/>
                 <TextBox Name="ConvergentAngleInput" TextChanged="ConvergentAngleInput_TextChanged" Width="150" FontSize="26" HorizontalAlignment="Left"/>
